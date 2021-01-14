@@ -1,6 +1,6 @@
 var f = require("fs");
 
-var input_file = f.readFileSync("F.txt", "utf-8").split("\n");
+var input_file = f.readFileSync("input_file.txt", "utf-8").split("\n");
 
 var params = input_file[0].split(" ");
 
@@ -104,4 +104,4 @@ for (let i in distinct) {
 }
 console.log("Scan completed with "+libraries_count+" libraries and "+scanned.length+" books"+". You scored: "+scores_count);
 var final_output = [libraries_count].concat(output);
-f.writeFileSync("F_0.txt", final_output.join("\n"));
+f.writeFileSync("output_file.txt", final_output.join("\n"));
